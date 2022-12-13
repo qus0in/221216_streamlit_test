@@ -29,7 +29,7 @@ from matplotlib import font_manager as fm, rcParams
 # 폰트 경로
 font_path = "./graph/NanumBarunGothic.ttf"
 # 폰트 이름 얻어오기
-font_name = font_manager.FontProperties(fname=font_path).get_name()
+font_name = fm.FontProperties(fname=font_path).get_name()
 # 폰트 설정
 matplotlib.rc('font',family=font_name)
 
