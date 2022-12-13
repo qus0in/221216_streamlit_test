@@ -1,2 +1,4 @@
 streamlit
-numpy # 사용할 패키지/라이브러리
+# 사용할 패키지/라이브러리
+numpy
+pandas

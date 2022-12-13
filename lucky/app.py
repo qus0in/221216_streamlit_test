@@ -3,6 +3,7 @@
 # streamlit 라이브러리 호출
 import streamlit as st # st라는 이름으로 사용
 import numpy as np
+import pandas as pd
 
 # st.write() 마크다운
 st.title("조추첨 페이지")
