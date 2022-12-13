@@ -62,11 +62,15 @@ ss2 = ss[ss.ne("")]
 # str: string 관련된 메소드를 사용할 수 있게 함
 n_idx = ss2.index.str.contains('n')
 n_data = ss2[n_idx]
-st.write(n_data)
+# st.write(n_data)
 
 g_idx = ss2.index.str.contains('g')
 g_data = ss2[g_idx]
-st.write(g_data)
+# st.write(g_data)
+
+# n_data를 섞어줄 것임 (비복원으로)
+n_rd = np.random.choice(n_data, len(n_data), replace=False)
+st.write(n_rd)
 
 # 2. df 형태로 정리
 # <추첨 버튼>
