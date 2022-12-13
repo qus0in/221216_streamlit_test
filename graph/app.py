@@ -18,5 +18,11 @@ st.write(
     ||이산형 데이터|과일 개수, 책의 페이지 수
     |범주형 데이터(범주로 나누어지는 데이터)|순서형 데이터|학점, 순위(랭킹)|
     ||명목형 데이터|성별, 음식종류, 우편번호|
+    # 수치형 데이터 numerical data
+    > 사칙 연산이 가능한 데이터 (+, -, *, /)
     '''
 )
+
+# df
+titanic = sns.load_dataset('titanic')
+st.write(titanic)
