@@ -24,7 +24,7 @@ for idx, col in enumerate(columns): # 열의 위치
         # col 안에 메소드를 통해서 요소들을 생성해주겠다
         col.text_input(
             f"조 추첨 대상 {idx+1 + idx2 * 4}",
-            key=f"{idx+1 + idx2 * 4}"
+            key=f"n{idx+1 + idx2 * 4}"
         ) # 4번 호출됨
 # 13명이 소속될 조 이름을 넣을 위치
 st.write(st.session_state)
