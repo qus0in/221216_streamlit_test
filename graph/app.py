@@ -34,6 +34,10 @@ titanic['나이'] = titanic.age
 
 import plotly.express as px
 
+# 한글 사용 -> plotly
+# requirements : plotly
+# https://docs.streamlit.io/library/api-reference/charts/st.plotly_chart
+# https://www.datacamp.com/cheat-sheet/plotly-express-cheat-sheet
 fig = px.histogram(titanic, x="나이")
 st.plotly_chart(fig)
 
