@@ -25,4 +25,5 @@ st.write(
 
 # df
 titanic = sns.load_dataset('titanic')
-st.write(titanic)
+# st.write(titanic)
+st.table(titanic)
