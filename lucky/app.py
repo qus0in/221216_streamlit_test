@@ -15,7 +15,8 @@ st.header("여러분의 참여를 환영합니다!")
 
 tabs = st.tabs(['참가자'])
 
-columns = st.columns(4) # 화면을 열로 나누어서 배치
+# 0번째 탭에 컬럼(열)을 넣겠다
+columns = tabs[0].columns(4) # 화면을 열로 나누어서 배치
 # 가로 4개의 열 -> columns = [col1, col2, col3, col4]
 # col1, col2, col3, col4
 # enumerate : index, value 묶음
