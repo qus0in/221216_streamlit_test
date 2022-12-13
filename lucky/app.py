@@ -12,6 +12,9 @@ st.header("여러분의 참여를 환영합니다!")
 # 4 x 4 (row, col)
 # 열을 배치하는 메소드
 # x = st.columns(n) : n만큼의 컬럼 리스트를 생성
+
+tabs = st.tabs(['참가자'])
+
 columns = st.columns(4) # 화면을 열로 나누어서 배치
 # 가로 4개의 열 -> columns = [col1, col2, col3, col4]
 # col1, col2, col3, col4
