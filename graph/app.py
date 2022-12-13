@@ -28,4 +28,7 @@ titanic = sns.load_dataset('titanic')
 st.write(titanic) # 적당히 짤라줌
 # st.table(titanic) # 전체를 보여줌
 
-st.write(titanic.info())
+# seaborn를 통한 시각화
+fig = plt.figure(figsize=(10, 4))
+sns.histplot(data=titanic, x='age')
+st.pyplot(fig)
