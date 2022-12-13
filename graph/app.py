@@ -30,11 +30,11 @@ from matplotlib import font_manager as fm, rcParams
 # st.write(fm.findSystemFonts(fontpaths=None, fontext='ttf'))
 font_list = [font.name for font in fm.fontManager.ttflist]
 st.write(font_list)
-font_path = "./graph/NanumBarunGothic.ttf"
+# font_path = "./graph/NanumBarunGothic.ttf"
 # 폰트 이름 얻어오기
-font_name = fm.FontProperties(fname=font_path).get_name()
+# font_name = fm.FontProperties(fname=font_path).get_name()
 # 폰트 설정
-matplotlib.rc('font',family=font_name)
+# matplotlib.rc('font',family=font_name)
 
 # df
 titanic = sns.load_dataset('titanic')
