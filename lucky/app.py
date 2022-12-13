@@ -17,6 +17,7 @@ columns = st.columns(4) # 화면을 열로 나누어서 배치
 for idx, col in enumerate(columns):
     # col.text_input(f"조 추첨 대상 {idx+1}", key=idx)
     for idx2 in range(4):
+        # key가 겹치면 안 됨
         col.text_input(f"조 추첨 대상 {idx+1 + idx2 * 4}", key=f"{idx+1 + idx2 * 4}")
 # 13명이 소속될 조 이름을 넣을 위치
 
