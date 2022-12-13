@@ -25,5 +25,7 @@ st.write(
 
 # df
 titanic = sns.load_dataset('titanic')
-# st.write(titanic)
-st.table(titanic)
+st.write(titanic) # 적당히 짤라줌
+# st.table(titanic) # 전체를 보여줌
+
+st.write(titanic.info())
