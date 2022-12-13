@@ -13,8 +13,8 @@ st.header("여러분의 참여를 환영합니다!")
 # 열을 배치하는 메소드
 columns = st.columns(4)
 # col1, col2, col3, col4
-for c in columns:
-    st.text_input("조 추첨 대상")
+for idx, c in enumerate(columns):
+    st.text_input("조 추첨 대상", key=idx)
 # 13명이 소속될 조 이름을 넣을 위치
 
 # <추첨 버튼>
