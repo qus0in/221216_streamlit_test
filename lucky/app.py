@@ -50,6 +50,11 @@ for idx, col in enumerate(columns2): # 열의 위치
         ) # 4번 호출됨
 
 # 13명이 소속될 조 이름을 넣을 위치
-st.write(st.session_state)
+# st.write(st.session_state)
+# np.random.choice -> 추출해서 이름들, 목록
+# 1. st.session_state - n, g가 섞여있음
+ss = pd.Series(st.session_state)
+st.write(ss)
+# 2. df 형태로 정리
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
