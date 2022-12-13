@@ -27,7 +27,9 @@ st.write(
 import matplotlib
 from matplotlib import font_manager as fm, rcParams
 # 폰트 경로
-st.write(fm.findSystemFonts(fontpaths=None, fontext='ttf'))
+# st.write(fm.findSystemFonts(fontpaths=None, fontext='ttf'))
+font_list = [font.name for font in fm.fontManager.ttflist]
+st.write(font_list)
 font_path = "./graph/NanumBarunGothic.ttf"
 # 폰트 이름 얻어오기
 font_name = fm.FontProperties(fname=font_path).get_name()
