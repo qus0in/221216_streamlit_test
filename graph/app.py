@@ -23,6 +23,10 @@ st.write(
     '''
 )
 
+sns.set(font="Malgun Gothic", 
+        rc={"axes.unicode_minus":False},
+        style='darkgrid')
+
 # df
 titanic = sns.load_dataset('titanic')
 st.write(titanic) # 적당히 짤라줌
@@ -30,7 +34,8 @@ st.write(titanic) # 적당히 짤라줌
 
 # seaborn를 통한 시각화
 fig = plt.figure(figsize=(8, 4))
-sns.histplot(data=titanic, x='age')
+titanic['나이'] = titanic.age
+sns.histplot(data=titanic, x='나이')
 st.pyplot(fig)
 
 fig = plt.figure(figsize=(8, 4))
