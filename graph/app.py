@@ -23,19 +23,6 @@ st.write(
     '''
 )
 
-# https://ehpub.co.kr/47-matplotlib%EC%9D%98-rc%EC%97%90-%ED%95%9C%EA%B8%80-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%A0-%EC%88%98-%EC%9E%88%EC%96%B4%EC%9A%94/
-import matplotlib
-from matplotlib import font_manager as fm, rcParams
-# 폰트 경로
-# st.write(fm.findSystemFonts(fontpaths=None, fontext='ttf'))
-font_list = [font.name for font in fm.fontManager.ttflist]
-st.write(font_list)
-# font_path = "./graph/NanumBarunGothic.ttf"
-# 폰트 이름 얻어오기
-# font_name = fm.FontProperties(fname=font_path).get_name()
-# 폰트 설정
-# matplotlib.rc('font',family=font_name)
-
 # df
 titanic = sns.load_dataset('titanic')
 st.write(titanic) # 적당히 짤라줌
@@ -44,8 +31,11 @@ st.write(titanic) # 적당히 짤라줌
 # seaborn를 통한 시각화
 fig = plt.figure(figsize=(8, 4))
 titanic['나이'] = titanic.age
-sns.histplot(data=titanic, x='나이')
-st.pyplot(fig)
+
+import plotly.express as px
+
+fig = px.histogram(titanic, x="나이")
+st.plotly_chart(fig)
 
 fig = plt.figure(figsize=(8, 4))
 sns.histplot(data=titanic, x='age', hue='alive', multiple='stack')
