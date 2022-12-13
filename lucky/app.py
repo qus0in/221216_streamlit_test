@@ -9,6 +9,8 @@ import pandas as pd
 st.title("조추첨 페이지")
 st.header("여러분의 참여를 환영합니다!")
 
+st.image("./no_gs.jpg")
+
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text_input
 # 4 x 4 (row, col)
 # 열을 배치하는 메소드
