@@ -23,9 +23,15 @@ st.write(
     '''
 )
 
-sns.set(font="Malgun Gothic", 
-        rc={"axes.unicode_minus":False},
-        style='darkgrid')
+# https://ehpub.co.kr/47-matplotlib%EC%9D%98-rc%EC%97%90-%ED%95%9C%EA%B8%80-%ED%8F%B0%ED%8A%B8%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%A0-%EC%88%98-%EC%9E%88%EC%96%B4%EC%9A%94/
+import matplotlib
+from matplotlib import font_manager as fm, rcParams
+# 폰트 경로
+font_path = "./graph/NanumBarunGothic.ttf"
+# 폰트 이름 얻어오기
+font_name = font_manager.FontProperties(fname=font_path).get_name()
+# 폰트 설정
+matplotlib.rc('font',family=font_name)
 
 # df
 titanic = sns.load_dataset('titanic')
