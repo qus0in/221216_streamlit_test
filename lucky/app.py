@@ -82,4 +82,5 @@ if st.button('추첨 시작!'):
         "추첨 대상자 이름": n_rd,
         "조 이름": g_rd,
     })
+    st.balloons()
     st.write(df)
