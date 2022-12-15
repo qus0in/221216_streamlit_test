@@ -25,9 +25,9 @@ st.number_input(
 
 # sex : 성별
 st.radio(
-    label='성별'
+    label='성별',
     options=["남성", "여성"],
-    index=0 # 기본 선택
+    index=0, # 기본 선택
     key='sex'
 )
 st.write(st.session_state['sex'])
