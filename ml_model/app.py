@@ -39,4 +39,13 @@ st.number_input(
     value=25.0,
     key='bmi'
 )
-st.write(st.session_state['bmi'])
+# st.write(st.session_state['bmi'])
+
+# children : 자녀수
+st.number_input(
+    label="자녀수",
+    step=1, 
+    value=1,
+    key='children'
+)
+st.write(st.session_state['children'])
