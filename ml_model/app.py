@@ -6,6 +6,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/bigdata-young/ai_26th/main/d
 st.write(df)
 
 import joblib
+import os
 
 model_path = f"{os.path.dirname(os.path.abspath(__file__))}/model.pkl"
 model = joblib.load(model_path)
