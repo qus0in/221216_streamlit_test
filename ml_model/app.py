@@ -66,3 +66,6 @@ st.selectbox(
     key='region'
 )
 st.write(st.session_state['region'])
+
+if st.button('예측'):
+    st.balloons()
