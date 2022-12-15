@@ -5,7 +5,7 @@ import pandas as pd
 df = pd.read_csv('https://raw.githubusercontent.com/bigdata-young/ai_26th/main/data/insurance.csv')
 st.write(df)
 
-import joblib
+import joblib # 사이킷런 import 안해도 model 객체 자체를 pkl로 불러옴
 import os
 # os.path... 파이썬 경로문제 해결
 model_path = f"{os.path.dirname(os.path.abspath(__file__))}/model.pkl"
@@ -66,6 +66,8 @@ st.selectbox(
     key='region'
 )
 # st.write(st.session_state['region'])
+
+st.write(st.session_state)
 
 if st.button('예측'):
     st.balloons()
