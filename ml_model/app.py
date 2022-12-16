@@ -6,7 +6,7 @@
 # 훈련 자체 시간이 많이 걸린다, 결과값만 빠르게 보여주고 싶다
 # streamlit 라이브러리 호출
 import streamlit as st
-with st.echo():
+with st.echo(code_location="below"):
     import pandas as pd
 
     df = pd.read_csv('https://raw.githubusercontent.com/bigdata-young/ai_26th/main/data/insurance.csv')
